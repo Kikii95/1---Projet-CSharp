@@ -1,0 +1,265 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\powerup_helper_tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|c:\\users\\kabboud\\documents\\temporary\\inventorysystem\\source\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|solutionrelative:source\\powerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|c:\\users\\kabboud\\documents\\temporary\\inventorysystem\\source\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|solutionrelative:source\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|c:\\users\\kabboud\\documents\\temporary\\inventorysystem\\source\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|solutionrelative:source\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|c:\\users\\kabboud\\documents\\temporary\\inventorysystem\\source\\capacity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-1234-567890ABCDEF}|Source\\InventorySystem.csproj|solutionrelative:source\\capacity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\powerup_helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_demo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stat_modifier_system.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_type_effectiveness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\player_enemy_ships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ihealth_interface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\InventorySystemTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\UnitTestsOnly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 204,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "powerup_helper.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\powerup_helper.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\powerup_helper.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\powerup_helper.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\powerup_helper.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwHgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:01:09.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\Program.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\Program.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:00:39.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "powerup_helper_tests.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\powerup_helper_tests.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\powerup_helper_tests.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\powerup_helper_tests.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\powerup_helper_tests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:00:34.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "stats_class.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_class.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_class.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_class.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:54:34.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "stats_demo.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_demo.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_demo.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_demo.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stats_demo.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAmwPQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:54:33.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "stat_modifier_system.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stat_modifier_system.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stat_modifier_system.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stat_modifier_system.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\stat_modifier_system.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAwwGsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:53:35.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ship_type_effectiveness.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_type_effectiveness.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_type_effectiveness.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_type_effectiveness.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_type_effectiveness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:51:57.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ship_class.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_class.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_class.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_class.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ship_class.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAwwNkAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:50:08.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "player_enemy_ships.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\player_enemy_ships.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\player_enemy_ships.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\player_enemy_ships.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\player_enemy_ships.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAwFsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:48:45.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Item.cs",
+              "RelativeDocumentMoniker": "Source\\Item.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Item.cs",
+              "RelativeToolTip": "Source\\Item.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAYwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:47:52.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ihealth_interface.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ihealth_interface.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ihealth_interface.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ihealth_interface.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\ihealth_interface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:47:37.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Capacity.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Capacity.cs",
+              "RelativeDocumentMoniker": "Source\\Capacity.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Capacity.cs",
+              "RelativeToolTip": "Source\\Capacity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T08:47:37.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Inventory.cs",
+              "RelativeDocumentMoniker": "Source\\Inventory.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\Inventory.cs",
+              "RelativeToolTip": "Source\\Inventory.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAnwNwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T07:56:31.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PowerUp.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\PowerUp.cs",
+              "RelativeDocumentMoniker": "Source\\PowerUp.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\Temporary\\InventorySystem\\Source\\PowerUp.cs",
+              "RelativeToolTip": "Source\\PowerUp.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAArwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T07:55:40.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InventorySystemTests.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\InventorySystemTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\InventorySystemTests.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\InventorySystemTests.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\InventorySystemTests.cs",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAqwKwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T07:39:19.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UnitTestsOnly.cs",
+              "DocumentMoniker": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\UnitTestsOnly.cs",
+              "RelativeDocumentMoniker": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\UnitTestsOnly.cs",
+              "ToolTip": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\UnitTestsOnly.cs",
+              "RelativeToolTip": "..\\..\\GitHub\\1---Projet-CSharp\\InventorySystem\\Tests\\UnitTestsOnly.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T07:35:14.43Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

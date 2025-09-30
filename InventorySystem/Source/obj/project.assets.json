@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\killi\\.nuget\\packages\\": {},
+    "C:\\Users\\kabboud\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\killi\\source\\Année 3\\1 - Projet C#\\InventorySystem\\Source\\InventorySystem.csproj",
+      "projectUniqueName": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\InventorySystem.csproj",
       "projectName": "InventorySystem",
-      "projectPath": "C:\\Users\\killi\\source\\Année 3\\1 - Projet C#\\InventorySystem\\Source\\InventorySystem.csproj",
-      "packagesPath": "C:\\Users\\killi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\killi\\source\\Année 3\\1 - Projet C#\\InventorySystem\\Source\\obj\\",
+      "projectPath": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\InventorySystem.csproj",
+      "packagesPath": "C:\\Users\\kabboud\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kabboud\\Documents\\GitHub\\1---Projet-CSharp\\InventorySystem\\Source\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\killi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kabboud\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -72,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

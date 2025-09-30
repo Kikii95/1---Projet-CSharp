@@ -98,6 +98,7 @@ public class Inventory
             if (!_activeEffects.Contains(tempPowerUp))
             {
                 _activeEffects.Add(tempPowerUp);
+                RemoveItem(item);
             }
         }
 
@@ -217,8 +218,8 @@ public class Inventory
         AddItem(dash);
         AddItem(shield);
         AddItem(missiles);
-        AddItem(speedBoost, 3);
-        AddItem(attackBoost, 2);
+        AddItem(speedBoost, 2);
+        AddItem(attackBoost, 3);
         AddItem(hpUpgrade);
         AddItem(attackUpgrade);
 

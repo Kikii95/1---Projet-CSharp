@@ -1,21 +1,30 @@
-Besoin : 
-Phase Explo
-Phase combat
-Tour par tour
-Terminal
+Space invaders
+RogueLike
 
-Idée :
-Space invader
-Roguelike
+### Besoin : 
+- Phase Explo
+- Phase combat
 
-Boss : Bombalero Crocodile
+# Phase Exploration :
+- Coffres / Récupération items
+- Quêtes
+- Rencontre mobs / Cases aléatoires
+- Map générée procéduralement
+- ## Déplacement :
+	- Grille
+	- Cases astéroïdes / roll dé, rencontre mob
 
-Attaque : 
-projectile
+## Phase Combat :
+- Tour par tour
+- Menu Actions en dessous fenêtre de fight
+- Faiblesses (Feu, Glace, Roche)
 
-Mouvement :
-ZQSD / ↑↓→←
+## Actions :
+- Attaque : 
+	- projectile 
 
-Objets :
-Power Up (Stats/Toggle)
-Projectils alternatifs
+- Objets :
+	- Power Up (Stats/Toggle)
+	- Projectils alternatifs
+
+- Changer Personnage / Vaisseau

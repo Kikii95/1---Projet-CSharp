@@ -42,10 +42,9 @@ public abstract class Item
         _category = category;
     }
 
-    // === MÉTHODE ABSTRAITE ===
+    // === MÉTHODE ===
     public abstract void Use();
 
-    // === MÉTHODES VIRTUELLES ===
     public virtual string GetDisplayInfo()
     {
         return $"[{_symbol}] {_name} - {_description}";

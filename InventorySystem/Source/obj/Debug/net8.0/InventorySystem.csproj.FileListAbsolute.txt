@@ -31,3 +31,15 @@ C:\Users\killi\source\Année 3\1 - Projet C#\InventorySystem\Source\obj\Debug\ne
 C:\Users\killi\source\Année 3\1 - Projet C#\InventorySystem\Source\obj\Debug\net8.0\refint\InventorySystem.dll
 C:\Users\killi\source\Année 3\1 - Projet C#\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.pdb
 C:\Users\killi\source\Année 3\1 - Projet C#\InventorySystem\Source\obj\Debug\net8.0\ref\InventorySystem.dll
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\bin\Debug\net8.0\InventorySystem.deps.json
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\bin\Debug\net8.0\InventorySystem.dll
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\bin\Debug\net8.0\InventorySystem.pdb
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.AssemblyInfoInputs.cache
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.AssemblyInfo.cs
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.sourcelink.json
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.dll
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\refint\InventorySystem.dll
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\InventorySystem.pdb
+C:\Users\kabboud\Documents\GitHub\1---Projet-CSharp\InventorySystem\Source\obj\Debug\net8.0\ref\InventorySystem.dll

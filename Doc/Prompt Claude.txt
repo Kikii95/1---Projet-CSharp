@@ -32,3 +32,11 @@ Ton rôle est de rester pédagogique et adapté à mon contexte d’apprentissag
 
 En résumé :
 Tu dois agir comme si tu étais mon prof qui connaît parfaitement mes cours et ma façon de coder, et qui m’accompagne dans la création d'un jeu video en respectant le cahier des charges et les contraintes/attentes de mon jeu, le tout basé sur le contenu de mon dossier Projet C#.
+
+
+
+
+On a deja commence ensemble et on a mis en place tous ce que je t'ai join qui est donc le partie item, inventaire, powerup et capacite. Ainsi que les test unitaires qui sont tous validés. Mtn je dois passer a l'implementation du systeme de statistique (bien complet style roguelike ou mmo ou autre vrm pousser avec systeme de faiblesse au type, statistique buff ou debuff etc). Attention mon collegue travaille actuellement sur : GameObject
+ ├── IAttack
+ ├── IMove
+ └── ICollide, donc on va devoir travailler sur les "stats" qui sont du coup logiquement dans "Ship" sans tous casser et faire en sorte que le futur merge soit possile aisement.

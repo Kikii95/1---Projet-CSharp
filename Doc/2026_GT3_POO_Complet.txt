@@ -1,0 +1,747 @@
+
+
+============================================================
+POO C#
+============================================================
+
+GT3 - Kévin Roussel
+
+
+
+--- Qu’est-ce qu’un champs (ﬁeld) ? ---
+
+
+Quelle est la différence entre
+un tableau (array) et
+
+
+--- une liste (list) ? ---
+
+
+Quelle est la différence entre
+une classe (class) et
+
+
+--- une structure (struct) ? ---
+
+
+
+
+--- Quel est le plus gros  problème du type ﬂoat ? ---
+
+indice : epsilon
+
+
+
+--- Qu’est-ce qu’une interface ? ---
+
+
+Objectif de la
+
+
+--- semaine : ---
+
+Créer un nouveau type et
+
+
+--- l’exploiter Health : ---
+
+Construct
+Field
+Property
+Method
+Event
++héritage, exceptions,
+optimisation
+
+
+
+--- Préparation Conseils : ---
+
+Utilisez Visual Studio 2022
+Versionnez votre code
+
+
+
+
+--- Le projet de la semaine : ---
+
+
+Jeu en console
+Utiliser la classe Console
+Rechercher le potentiel de cette classe
+Formaliser son code, le garder consistant et maintenable dans le temps
+
+
+
+
+--- Quelques exemples : ---
+
+
+
+
+--- Qu’est-ce qu’un objet ? ---
+
+
+Un ensemble de champs et de méthodes
+Le but : rassembler un ensemble cohérent de fonctionnalités.
+-Organisation sous forme d’objet, on fait en sorte de ne lui dédier qu’une
+responsabilité .
+-Sur Unity (ou autre moteur) on travaille majoritairement en composition  et
+moins en héritage
+-Chaque classe a sa responsabilité et c’est l’ensemble des composants qui va donner
+une cohérence à une entité (joueur, PNJ, interactable etc)
+
+
+
+--- Une fois l’ensemble des composants mis en place : ---
+
+-On doit gérer la communication entre chaque composants, on parle alors
+d’architecture , les composants ont des relations entre eux.
+-Ils peuvent se donner de l’information (property)
+-Ils peuvent s’avertir d’un évènement (event)
+-Ils peuvent utiliser une fonctionnalité d’un autre composant (method)
+-Un composant conserve également des informations précieusement (ﬁeld)
+
+Parlons un peu de console
+
+
+--- Les méthodes essentielles : ---
+
+Console.Write
+Console.Read (et ReadKey)
+Console.SetPosition
+Console.BackgroundColor / ForegroundColor
+
+Formalisation de notre démarrage : Main
+class  Program
+{
+static void  Main ()
+{
+Console .WriteLine ("Hello World !" );
+Console .Read ();
+}
+}
+
+
+Quelques bases
+
+Classe
+
+Concept
+Rassemble un ensemble d’information et de fonctionnalité
+Une classe est un plan de construction, on écrit le contenu que va contenir chaque
+instance. Une instance  est unique et peut évoluer indépendamment.
+Type = Classe = Plan de construction
+Instance = this = Composant évoluant au runtime
+
+
+Concept
+Les instances possèdent donc les mêmes champs et méthodes mais leur
+contenu change de façon indépendante (pour conserver une information au
+niveau du type, on utilisera static)
+
+
+Visibilité
+Dans une classe, les champs et méthodes ont 2 visibilités principales (+2
+bonus).
+Permet d’ouvrir nos fonctionnalités aux autres composants (ou à l’inverse,
+permet de cacher nos mécanismes qui ne concernent que nous)
+L’idée n’est de proposer aux autres classes que le stricte minimum. On propose
+une surface d’appel qui respecte les besoins des autres composants, le reste
+c’est notre mécanique interne.
+
+Visibilité (bonus)
+public : dispo à tous
+private : dispo uniquement pour notre classe
+protected : héritage
+internal : assembly
+
+Champs
+
+[T ype] label;
+int : nombre entier
+ﬂoat : nombre à virgule ﬂottante (ajouter le ‘f’)
+string : chaine de caractère
+bool : vrai/faux (true/false)
+Vector3 : position ou direction (Unity)
+Color : couleur (Unity)
+ex : int _maVie;       ﬂoat _monArgent;         string _monNom;            Vector3 _maDirection;
+Version complète : [Attributs] [Visibilité] [Type] label;
+
+L’information
+Nos champs nous permettent de conserver des informations qui doivent rester dans le
+temps.
+Convention de nommage :  commencer par un ‘_’ puis camelCase
+Ex : _currentLife, _maxLife
+/!\ Attention : une variable n’est pas un champs (dispo qu’au sein d’une fonction)
+
+Pas de champs public !
+-On dévoile toutes nos informations vitales
+-On autorise d’autres composants à modiﬁer nos valeurs essentielles
+-Une vie à -12 ? Merci notre cher.e stagiaire
+-Une vie supérieure à notre valeur de vie max ? Oups
+-Nos champs, c’est notre jardin secret
+-Il n’y a QUE notre composant qui doit y avoir accès.
+-… Et si on veut proposer aux gens d’accéder à ces valeurs, on mettra en place des
+propriétés
+-On peut choisir si on veut proposer ou pas la conﬁguration des valeurs initiales
+via l’editeur. [SerializeField]
+
+Sur Unity
+[SerializeField] permet au game designer de renseigner une valeur de départ pour le
+composant … Mais il peut faire des erreurs ou il peut avoir la ﬂemme de renseigner des
+valeurs initiales
+On peut mettre une information sur un champs, une méthode ou une classe via
+l’utilisation d’un attribut.  Il existe tout un lot d’attribut déjà existant et on peut
+également créer les nôtres au besoin (un peu plus avancé).
+
+Notre métier
+-Créer des composants qui vont ﬁtter avec les besoins énoncé par les GD
+-Organiser les entités pour qu’elles puissent interagir facilement
+-Ouvrir des outils et champs aux GD pour qu’ils puissent conﬁgurer les entités
+(vous avez pas envie de faire ça)
+-Créer du tooling pour rendre le travail de vos collègues plus agréable.
+
+
+
+--- Les petits mot clés sympas : ---
+
+var
+?.
+
+
+--- ?? ---
+
+new()
+dynamic (juste pour la culture à ne jamais utiliser)
+
+Health
+Mettre en place nos champs
+MaxLife - dispo pour le GD - forcément positif - valeur initiale : 100
+CurrentLife - interne au composant - évolue dans le temps - rendre le champ visible au
+runtime
+
+
+Méthodes
+
+Concept
+Rassemble une série d’instructions formant une fonctionnalité.
+Variables, assignations, conditions, boucles, appels de fonction
+Une méthode peut être enclenché par un autre composant (fonction publique)
+Une méthode peut également être dispo que pour notre fonctionnement interne
+(fonction privé)
+
+2 catégories de méthodes
+
+
+--- -Fonction : ---
+
+-Ensemble d’instruction aboutissant à un résultat donné.
+-ex : Mathf.Abs, Mathf.Min etc
+
+
+--- -Procédure : ---
+
+-Ensemble d’instruction ne retournant pas de résultat
+-ex : Debug.Log
+
+V ariable
+
+[TYPE] labelDeLaV ariable = {V aleur initiale};
+-Une information temporaire au sein d’une fonction/méthode
+-camelCase simple
+Faisons la distinction entre champs et variable
+-un champs commence par un ‘_’ (underscore) et est écrit en camelCase
+-_monChamps
+-une variable est écrit en camelCase
+-maVariable
+Quand on modiﬁe une information labélisé avec un underscore on sait qu’on touche à
+un champs
+
+Scope
+Une variable n’est disponible qu’au sein d’une fonction. À la ﬁn de l’execution de la
+fonction la variable n’existe plus.
+Elle n’existe que dans la porté de la fonction (scope)
+Un scope = entre 2 accolades
+Dès qu’il y a des accolades, il y a un scope (classe, méthodes, conditions, boucles etc)
+Un champs étant déclaré au sein d’une classe, le champs est persistant et est dispo dans
+les méthodes
+
+Signature de fonction
+
+
+--- Fonctions : ---
+
+[Type de retour]  LabelDeLaFonction ()
+Fonction retournant un résultat
+[Type de retour]  LabelDeLaFonction ( type labelParam1, type labelParam2 etc)
+Autant de paramètres que l’on veut. ça va nous créer une variable automatiquement.
+
+
+--- Procédures : ---
+
+void LabelDeLaFonction()
+void LabelDeLaFonction( type labelParam1 etc)
+Pas de retour, on peut demander des paramètres (ex: Debug.Log)
+
+Signature : un mode d’emploi
+-Permet de savoir ce que l’on va recevoir à la suite d’un appel
+-Consultez la doc pour avoir plus d’informations sur les fonctions que vous utilisez
+
+Health
+On veut rendre dispo une méthode pour perdre des points de vie
+Une méthode pour gagner des points de vie également
+On a une méthode pour mourir qui n’est appellé qu’en interne (le composant Health
+décide de quand appeller “Die”)
+Implémenter Health et faire un autre composant qui va exploiter les méthodes de
+Health. Utiliser NaughtyAttributes pour rendre le tout facilement accessible pour les
+tests
+
+C’est le moment de parler des T est Unitaires
+-Le but : prouver que votre code fonctionne
+-Votre production doit être robuste et gérer même les cas “exotiques” qui viendrait
+d’une mauvaise utilisation de vos classes.
+
+
+--- -Ex : maVie.TakeDamage( - 12 ); // Ici on prend des dégâts négatifs, comment on doit gérer ce cas ? ---
+
+
+Les tests unitaires sont un projet à côté de votre logiciel
+Il n’a aucun intérêt de se retrouver dans le build ﬁnal, ce n’est qu’un outil pour les
+développeurs pour prouver que votre taﬀ fonctionne.
+Dans un contexte avec une hiérarchie de travail plus élaboré, votre supérieur devrait
+valider le code que vous poussez en production. Comment peut-il savoir que vous
+n’avez pas fait d’erreur ? Les tests unitaires sont une preuve en plus que l’on peut avoir
+conﬁance dans votre production.
+
+Création d’un projet de test unitaire en live et premier test.
+
+Voici votre premier projet avec des test unitaires à compléter
+La première fois avec des TU c’est toujours diﬃcile, c’est tout à fait normal de ne pas
+comprendre l’ensemble de la démarche, ni de comprendre comment en créer.
+Dans un premier temps je vous donnerais des TU, donc les tests seront déjà fait et
+votre code devra valider les tests.
+Une fois plus à l’aise on va pouvoir prendre l’initiative de créer des TU pour prouver
+que ce que l’on a fait est robuste.
+
+
+
+============================================================
+POO C#
+============================================================
+
+GT3 - Kévin Roussel
+
+Rappel
+-Classe : rassemble des champs et des méthodes pour répondre à un besoin
+spéciﬁque
+-Champs : information préservée au cours du jeu.
+-Méthodes : fonctionnalité de la classe, peut être ouvert à tous (public) ou
+uniquement disponible dans la classe (private)
+-Scope : porté, une variable créée dans un scope est disponible uniquement dans ce
+dernier.
+
+Conditions
+if(CONDITION)
+{
+}
+else if(CONDITION)
+{
+}
+else
+{
+}
+
+
+Instruction - switch
+Permet de tester un ensemble de
+valeur possible pour une information
+donnée.
+Souvent utilisé avec des enum
+case
+default
+break;switch(state)
+{
+
+
+--- case PATROL : ---
+
+Debug.Log(“Patrouillons”);
+break;
+
+
+--- case CHASE: ---
+
+Debug.Log(“Tiens vla quelqu’un”);
+break;
+
+
+--- case ATTACK: ---
+
+Debug.Log(“A l’assault !”);
+break;
+
+
+--- default : ---
+
+Debug.Log(“Je sais pas ce que je fais”);
+break;
+}
+
+Boucles : while
+On refait un ensemble d’opération TANT QUE la condition donné est vrai.
+Attention, si cette condition est fausse dès la première fois on saute le bloc
+while( CONDITION)
+{
+Debug.Log(“C’est beau mais c’est loin”);
+}
+
+Boucles : do while
+Même chose que le while à la seule diﬀérence que l’on évalue la condition à la ﬁn du
+bloc de code. On est donc assuré de faire le bloc au moins une fois.
+do
+{
+Debug.Log(“C’est beau mais c’est loin”);
+} while( CONDITION);
+
+Boucles : for
+Parfois on veut faire une boucle un certain nombre de fois déjà déﬁni à l’avance.
+Le for nous permet de rassembler ces instructions en une ligne. Utile pour parcourir un
+tableau
+for( INIT ; CONDITION ; ITERATION )
+{
+}
+
+Boucle : foreach
+Évolution du for, permet de parcourir de bout en bout une collection (IEnumerable)
+public List<string> jours = new List<string>() { “lundi”, “mardi”, … };
+Debug.Log(“le facteur n’est pas passé, il ne passera jamais”);
+foreach ( string j in jours )
+{
+Debug.Log(j);
+}
+
+Si une méthode ne possède qu’une seule ligne de code
+On peut utiliser une syntaxe permettant de tout faire sur une seule ligne
+void SayHelloWorld() => Debug.Log(“Hello World”);
+vs
+void SayHelloWorld()
+{
+Debug.Log(“Hello World”);
+}
+
+Propriétés
+
+Habituellement …
+Nos champs sont privés, donc il est de coutume de créer une méthode qui se contente
+de nous retourner la valeur d’un champs. De cette manière l’information peut être
+disponible.
+string _myMessage;
+string GetMyMessage() => _myMessage;
+
+C’est la qu’intervient les propriétés
+“Syntaxique Sugar” permettant de simpliﬁer l’écriture de ces méthodes basiques
+string _myMessage;
+public string MyMessage
+{
+get => _myMessage;
+set => _myMessage = value;
+}
+
+On peut customiser la visibilité
+public string Message
+{
+get => _message;
+private set => _message = value;
+}
+
+On peut également omettre le corps du getter et du setter
+public int CurrentHealth { get; private set; }
+(Ici le compilateur nous crée automatique un champs qu’il utilise dans la propriété)
+
+Résumé
+Dès que l’on veut rendre accessible une information au reste du monde, on expose
+alors une propriété.
+De cette manière, on garde le contrôle sur nos champs. On peut proposer aux autres
+composants de changer les valeurs MAIS ils doivent passer par nous (set), ce qui nous
+permet de nous assurer qu'on ne nous injecte pas des valeurs bidons.
+
+Events
+
+A quoi ça sert
+Déclarer qu’il s’est passé quelque chose de spéciﬁque. Les composants qui se sont
+inscrit à cet évènement va voir sa fonction enregistrée appellée pile au moment de
+l’invocation de l’event.
+
+
+Une fonction est assignable à un objet
+
+
+--- Une fonction retournant void : ---
+
+Action
+
+
+--- Une fonction void avec un premier paramètre int : ---
+
+Action<int>
+
+
+--- Une fonction void avec un paramètre int puis string : ---
+
+Action<int,string>
+Et ainsi de suite…
+
+Une fonction est assignable à un objet
+
+
+--- Une fonction retournant int : ---
+
+Func<int>
+
+
+--- Une fonction retournant int avec un param string : ---
+
+Func<string, int>
+On enchaîne les types des params puis en dernier on indique le type de retour
+
+Déclaration d’un event
+Dans notre classe Health, lorsque le personnage meurt on veut un event OnDie.
+On n’a pas spécialement d’information à fournir à ce moment donc on utilisera juste le
+type Action
+public  event  Action  OnDie ;
+
+
+
+
+--- Pour le déclencher : ---
+
+void  Damage (int amount )
+{
+_hp  -= amount ;
+if (_hp<=0)
+{
+OnDie? .Invoke ();
+}
+}
+La subtilité ici c’est que l’event
+est potentiellement null si
+personne ne s’y est inscrit.
+Pour régler ça on utilise
+traditionnellement l’opérateur ?.
+
+
+
+--- Pour s’inscrire à un event : ---
+
+Health  h = new();
+h.OnDie  += MaReactionOnDie ;
+// Un peu plus loin j'ai une fonction qui est là pour gérer la mort
+void  MaReactionOnDie ()
+{
+Console .Write ("Olala je suis mort" )
+}
+
+
+La désinscription est logique du coup
+h.OnDie  -= MaReactionOnDie ;
+C’est important de se désinscrire pour nettoyer la mémoire auprès de ceux
+dont on s’est inscrit. ça va notamment être primordiale lors de la
+gestion du cycle de vie d’objets plus complexe.
+
+
+On aura une utilisation des events bien plus importantes plus tard
+Notamment sur des systèmes qui soient de plus en plus complexe.
+On peut penser par exemple à un contexte de gameplay où l’on veut éviter que des
+objets spam de demande un autre objet.
+Exemple : une barre de vie qui veut se refresh à chaque frame. Aucun intérêt, il est plus
+
+
+--- pertinent que l’UI se branche sur un event pour réagir lorsque la vie du perso change : ---
+
+On diminue drastiquement le nombre d’appel.
+
+
+
+--- Donc on a : ---
+
+Des champs, nos informations qui persiste dans le temps
+Des propriétés, pour rendre disponible nos informations
+Des méthodes, pour faire du travail concret
+Des évènement pour avertir le monde d’une situation donnée
+
+Static
+
+Des nouvelles subtilités
+Le modiﬁcateur static : le membre concerné est écrit dans le type et non dans les
+instances, de cette manière on peut avoir une information en commun.
+Une méthode public static est dispo à tous et peut être appelée à n’importe quel
+moment : Debug, Mathf, JSONUtility, PlayerPrefs …
+… Et donc Console également !
+
+
+Utilisation ultra classique : Singleton
+public class GameManager
+{
+public static GameManager Instance;
+}
+
+Structure
+
+Maintenant les structures …
+-Plus contraignant
+-… Mais aussi bien plus optimisé
+-Utile pour de petites informations
+-Vector3
+-Color
+-RaycastHit
+
+new
+Quand on veut créer un nouveau Vector3, il faut utiliser le mot-clé new
+var direction = new Vector3(1 , 2 , 3);
+
+Constructeur
+De l’autre côté de la barrière
+public struct Vector3
+{
+ﬂoat x, y, z;
+public Vector3 (ﬂoat myX, ﬂoat myY, ﬂoat myZ)
+{
+x = myX; // etc
+}
+}
+
+Recréons Vector3
+-champs _x, _y, _z
+-Propriété X, Y, Z
+-propriété Magnitude
+-propriété SqrtMagnitude
+-méthode Normalize
+-surcharge d’opérateur +
+Et faites les tests unitaires qui pourrait prouver que votre travail fonctionne
+
+
+
+
+============================================================
+POO C#
+============================================================
+
+A2 - Kévin Roussel
+
+Debuggage
+-Il est important, fondamental de comprendre et de savoir utiliser les outils de
+debuggage.
+-Beaucoup ne font que des Debug.Log lors d’utilisation de moteurs et c’est une très
+mauvaise pratique lorsqu’elle est systématique : c’est très pauvre en information.
+-Lorsqu’il y a un doute, il est pertinent de placer un breakpoint puis d’avancer pas à
+pas pour comprendre le comportement de notre travail et les diﬀérents
+aller/retour.
+Démo live Visual Studio & Rider
+
+Visibilité
+Pour chaque champs, propriétés et méthodes on peut spéciﬁer un niveau
+d’accessibilité. Ce membre ne sera visible que pour une catégorie précise.
+private : Disponible que pour la classe elle-même
+public : Disponible auprès de tout le monde.
+internal : Disponible qu’au sein de la même DLL (Assembly Deﬁnition sur Unity)
+protected : Disponible pour la classe elle-même ainsi que pour les classes enfants
+
+Heritage
+
+Héritage
+Certains composants ont potentiellements des méthodes en commun, des champs en
+communs.
+Au lieu de copier/coller, utilisons l’héritage
+
+Le but : rassembler du code
+L’enfant récupère tout le contenu de la classe mère
++on peut ajouter de nouvelles méthodes / champs / propriétés / event
++on peut modiﬁer les méthodes que l’on a récupéré (si elles sont virtuelles)
+
+virtual, override
+Une méthode virtuelle peut être réécrite par une classe enfant
+Si un enfant veut réécrire le contenu, il faut override
+
+base
+On a toujours à disposition la méthode de base fournie par la classe mère.
+base.Use();
+
+Nouvelle visibilité : protected
+Rendre disponible un membre aux classes qui héritent de nous
+
+sealed : fermer l’héritage
+une classe marquée comme sealed ne peut pas être hérité.
+
+Exemple : Item
+public virtual void Use()
+un Item dans le jeu représente un objet que le joueur peut attraper
+-ça peut être une potion, une fois utilisé on gagne de la vie
+-ça peut être une arme, une fois utilisé on est équipé de l’arme
+-ça peut être une clé, une fois utilisé on ouvre une porte
+-ça peut être une bicyclette, une fois utilisé on peut rouler dans le jeu
+
+abstract
+une méthode virtuelle, sans contenu.
+Chaque classe enfant doit remplir la méthode aﬁn de pouvoir être valide.
+
+is
+mot clé pour savoir si un objet EST tel type
+
+as & cast
+Des fois, on a une liste d’Item …
+mais on SAIT que l’item que l’on a sous la main est en fait une potion, on veut accéder
+à un champs unique à lui.
+On peut choisir de caster l’objet, “Cher unity, je sais que cet objet est une potion,
+promis juré”
+
+
+Le cast “méchant”
+Considère ça comme une potion, et si je me suis trompé : envoi moi une erreur fatale
+Item monObjet;
+Potion p = (Potion) monObjet;
+
+Le cast “gentil”
+Considère ça comme une potion, et si je me suis trompé met moi juste “null” comme
+valeur, my bad.
+Item monObjet;
+Potion p = monObjet as Potion;
+
+
+
+--- L’héritage ajoute : ---
+
+virtual, override, base
+abstract (class & méthode)
+protected
+sealed
+cast
+
+
+
+--- 3 types dont vous hériterez souvent : ---
+
+-MonoBehaviour, le composant Unity
+-ScriptableObject, le ﬁchier de conﬁguration
+-StateMachineBehaviour, le composant d’Animator
+
+C’est le moment de bosser
+Résolvons des TU avec de l’héritage
+
+
+
+--- Comme d’habitude voici un jeu de tests unitaire : ---
+
+
+
+--- à vous de résoudre toutes les situations : ---
+
+
+
+--- Le package : ---
+
+https://drive.google.com/ﬁle/d/1D06HzYlT9-QjxcMK-zj7sAOJLv5rnFjP/view?usp=shari
+ng
+
+

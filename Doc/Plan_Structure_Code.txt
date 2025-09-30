@@ -1,0 +1,30 @@
+Plan de la structure du code
+
+Canvas (singleton)
+ └── Scene
+      ├── Grid
+      │    ├── Exploration Grid
+      │    └── Fight Grid
+      │
+      ├── Ship (hérite de GameObject, implémente IHealth)
+      │    ├── Player Ship
+      │    └── Enemy Ship
+      │    └── Utilise Projectiles
+      │
+      └── Projectiles (hérite de GameObject, inclus dans Scene et utilisé par Ship)
+
+GameObject
+ ├── IAttack
+ ├── IMove
+ └── ICollide
+
+Inventory (singleton)
+ └── Items
+      ├── Capacity
+      └── PowerUp
+
+Interfaces :
+ - IHealth (implémentée par Ship)
+ - IAttack (implémentée par GameObject)
+ - IMove (implémentée par GameObject)
+ - ICollide (implémentée par GameObject)

@@ -1,0 +1,21 @@
+Besoin : 
+Phase Explo
+Phase combat
+Tour par tour
+Terminal
+
+Idée :
+Space invader
+Roguelike
+
+Boss : Bombalero Crocodile
+
+Attaque : 
+projectile
+
+Mouvement :
+ZQSD / ↑↓→←
+
+Objets :
+Power Up (Stats/Toggle)
+Projectils alternatifs
